@@ -5,6 +5,7 @@ import { mongoConnect, mongoDisconnect } from "../../services/mongo";
 describe("Launches API", () => {
   beforeAll(async () => {
     await mongoConnect();
+    await loadPlanetsData();
   });
 
   afterAll(async () => {
