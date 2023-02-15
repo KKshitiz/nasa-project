@@ -1,5 +1,6 @@
 import supertest from "supertest";
 import app from "../../app";
+import { loadPlanetsData } from "../../models/planets.model";
 import { mongoConnect, mongoDisconnect } from "../../services/mongo";
 
 describe("Launches API", () => {
