@@ -7,7 +7,7 @@ import { loadLaunchesData } from "./models/launches.model";
 import { loadPlanetsData } from "./models/planets.model";
 import { mongoConnect } from "./services/mongo";
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 const server = createServer(app);
 
