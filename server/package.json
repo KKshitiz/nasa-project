@@ -6,8 +6,8 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
     "test-watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
-    "start": "PORT=5000 node --experimental-modules --es-module-specifier-resolution=node src/server.js",
-    "watch": "PORT=5000 nodemon --experimental-modules --es-module-specifier-resolution=node src/server.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node src/server.js",
+    "watch": "nodemon --experimental-modules --es-module-specifier-resolution=node src/server.js",
     "cluster": "pm2 start src/server.js -i max"
   },
   "jest": {
