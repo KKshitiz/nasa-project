@@ -1,6 +1,6 @@
 import cors from "cors";
 import express from "express";
-import helmet from  "helmet";
+import helmet from "helmet";
 import morgan from "morgan";
 import path from "path";
 import api from "./routes/api";
@@ -11,7 +11,7 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*",
   })
 );
 
